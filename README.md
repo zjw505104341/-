@@ -75,7 +75,8 @@ npm run build
 
 如果这个开源项目对您有帮助，请作者喝杯咖啡吧。
 
-![avatar](https://zjw.run/images/zhi_fu_bao_shoukuan.jpg）
+![avatar](https://zjw.run/images/zhi_fu_bao_shoukuan.jpg)
+![avatar](https://zjw.run/images/wei_xin_shoukuan.jpg)
 
 ## 友情链接
 [本人博客](www.zjw.run)
