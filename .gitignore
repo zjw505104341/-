@@ -1,3 +1,4 @@
+.idea
 .DS_Store
 node_modules
 
@@ -11,7 +12,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
-.idea
+node_modules
+
 .vscode
 *.suo
 *.ntvs*
