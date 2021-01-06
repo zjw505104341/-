@@ -4,7 +4,7 @@
 
 
 ## 年会抽奖
-[演示地址](https://vitozyf.github.io/lucky-draw/index.html#/?tdsourcetag=s_pctim_aiomsg)
+[演示地址](https://zjw505104341.github.io/luck-draw/)
 
 ## 使用说明
 
@@ -79,5 +79,5 @@ npm run build
 ![avatar](https://zjw.run/images/wei_xin_shoukuan.jpg)
 
 ## 友情链接
-[本人博客](www.zjw.run)
+[本人博客](https://zjw.run)
 
