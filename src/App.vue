@@ -175,7 +175,6 @@ export default {
     datas() {
       const nums = this.list.length;
       const allData = luckydrawHandler(nums, [], nums);
-      console.log(allData)
       const allDatas = allData.map(item => {
         const listData = this.list.find(d => d.key === item);
         const photo = this.photos.find(d => d.id === item);

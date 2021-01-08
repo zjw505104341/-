@@ -37,7 +37,7 @@
           :key="j"
           :data-res="data"
         >
-          {{ data }}
+          {{ data.name }}
         </span>
       </span>
     </div>
@@ -45,6 +45,7 @@
 </template>
 <script>
 import { conversionCategoryName, getDomData } from '@/helper/index';
+import { dataList } from '@/helper/data';
 export default {
   name: 'c-Result',
   props: {
@@ -63,12 +64,20 @@ export default {
       const list = [];
       for (const key in this.result) {
         if (this.result.hasOwnProperty(key)) {
-          const element = this.result[key];
+            const allDatas = this.result[key].map(item => {
+                const listData = dataList.find(d => d.key === item);
+                // const photo = this.photos.find(d => d.id === item);
+                return {
+                  key: item,
+                  name: listData ? listData.name : '',
+                  // photo: photo ? photo.value : ''
+                };
+            });
           let name = conversionCategoryName(key);
           list.push({
             label: key,
             name,
-            value: element
+            value: allDatas
           });
         }
       }

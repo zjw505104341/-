@@ -20,6 +20,7 @@
 </template>
 <script>
 import { conversionCategoryName } from '@/helper/index';
+import { dataList } from '@/helper/data';
 
 export default {
   name: 'Publicity',
@@ -38,11 +39,13 @@ export default {
       fields.forEach((item, index) => {
         let label = conversionCategoryName(item);
         if (result[item] && config[item] > 0) {
+          const arr2 = result[item];
+          const datasss = arr2.map(function (val1) {return dataList.map( function (val2) {return val2.key == val1 ? val2.name: ''}).join("") });
           message.push({
             key: index + 1,
             title: `${label}抽奖结果:`,
             value: `${
-              result[item].length > 0 ? result[item].join('、') : '暂未抽取'
+              result[item].length > 0 ? datasss.join('、') : '暂未抽取'
             }`
           });
         }
@@ -78,7 +81,7 @@ export default {
     &.actiname {
       .title {
         color: red;
-        font-size: 20px;
+        font-size: 30px;
       }
     }
   }

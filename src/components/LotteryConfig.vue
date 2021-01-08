@@ -23,14 +23,14 @@
         <el-form-item label="抽奖标题">
           <el-input v-model="form.name"></el-input>
         </el-form-item>
-        <el-form-item label="抽奖总人数">
-          <el-input
-            type="number"
-            v-model="form.number"
-            :min="1"
-            :step="1"
-          ></el-input>
-        </el-form-item>
+        <!--<el-form-item label="抽奖总人数">-->
+          <!--<el-input-->
+            <!--type="number"-->
+            <!--v-model="form.number"-->
+            <!--:min="1"-->
+            <!--:step="1"-->
+          <!--&gt;</el-input>-->
+        <!--</el-form-item>-->
         <el-form-item label="特等奖">
           <el-input
             type="number"
