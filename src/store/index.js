@@ -4,7 +4,8 @@ import {
   setData,
   resultField,
   newLotteryField,
-  listField
+  listField,
+    allNumS
 } from '@/helper/index';
 
 Vue.use(Vuex);
@@ -13,7 +14,7 @@ export default new Vuex.Store({
   state: {
     config: {
       name: 'BroadFun 年会抽奖',
-      number: 190,
+      number: allNumS,
       firstPrize: 1
     },
     result: {
@@ -27,7 +28,7 @@ export default new Vuex.Store({
     setClearConfig(state) {
       state.config = {
         name: 'BroadFun 年会抽奖',
-        number: 190,
+        number: allNumS,
         firstPrize: 1
       };
       state.newLottery = [];
@@ -46,7 +47,7 @@ export default new Vuex.Store({
     setClearStore(state) {
       state.config = {
         name: 'BroadFun 年会抽奖',
-        number: 190,
+        number: allNumS,
         firstPrize: 1
       };
       state.result = {
